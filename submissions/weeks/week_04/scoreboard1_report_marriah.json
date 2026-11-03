@@ -1,0 +1,149 @@
+{
+  "student": "Marriah",
+  "variant": "shape-two_sided__width-amplitude",
+  "kind": "candidate",
+  "spec": {
+    "shape": "two_sided",
+    "pooling": "shared",
+    "drift": "exponential",
+    "profile": "gaussian",
+    "width": "amplitude",
+    "gate": "none",
+    "emission": "threshold"
+  },
+  "question": "Does combining a two-sided temporal emergence profile with amplitude-dependent latitude-belt width improve held-out sunspot-emergence prediction relative to baseline?",
+  "fitted_parameters": 26,
+  "held_out_nll_per_hemicycle_year": -26.296551573285683,
+  "between_hemicycle_spread": 18.392492821720182,
+  "held_out_by_hemicycle": {
+    "12N": -3.971739207588204,
+    "12S": -4.099805897882327,
+    "13N": -10.419295071306204,
+    "13S": -19.075771697970005,
+    "14N": -2.6780036757399612,
+    "14S": -1.5496878313416909,
+    "15N": -14.993753616577532,
+    "15S": -16.68482546005561,
+    "17N": -34.24531583877489,
+    "17S": -36.61378264368961,
+    "18N": -52.97501741436966,
+    "18S": -46.02044320950111,
+    "19N": -63.15198154885702,
+    "19S": -43.82553758920961,
+    "21N": -34.21559630108748,
+    "21S": -34.06823270438429,
+    "23N": -26.014419850947288,
+    "23S": -28.734718759859827
+  },
+  "paired_vs_baseline": {
+    "mean": -0.8759911019195055,
+    "se": 0.403012541331112,
+    "median": -0.3292977932849368,
+    "better": 15,
+    "of": 18
+  },
+  "in_sample_nll_per_hemicycle_year": 27.293775823825932,
+  "ks_median": 0.04152072247998735,
+  "ks_not_rejected": 8,
+  "ks_by_hemicycle": {
+    "12N": 0.028816398537472587,
+    "12S": 0.06424792826477765,
+    "13N": 0.08623865789400786,
+    "13S": 0.030321627111892235,
+    "14N": 0.08740736622055811,
+    "14S": 0.14047639051717592,
+    "15N": 0.07318382742413804,
+    "15S": 0.02505129926270877,
+    "17N": 0.03137491746747234,
+    "17S": 0.06585579242991291,
+    "18N": 0.07260347639637899,
+    "18S": 0.016761742685101444,
+    "19N": 0.11195817436735173,
+    "19S": 0.035857765349592285,
+    "21N": 0.033834597507563235,
+    "21S": 0.04187309849803034,
+    "23N": 0.035650099062375595,
+    "23S": 0.041168346461944366
+  },
+  "plausibility_cycle": 19,
+  "count_error_percent": 10.56891066697305,
+  "plausibility": {
+    "19N": {
+      "observed": 1590,
+      "predicted": 1443.3010167306345,
+      "centroid_obs": 17.16069182389937,
+      "centroid_model": 15.227449634390574,
+      "spread_obs": 8.50474278481396,
+      "spread_model": 7.7484421950243
+    },
+    "19S": {
+      "observed": 1121,
+      "predicted": 1254.5275807730586,
+      "centroid_obs": 16.36842105263158,
+      "centroid_model": 15.091958665505137,
+      "spread_obs": 7.601178491265532,
+      "spread_model": 7.514112837235074
+    }
+  },
+  "protocol": {
+    "evaluation": "leave-one-cycle-out",
+    "held_out_unit": "solar cycle",
+    "headline_amplitude": "area record",
+    "held_out_unit_contributed": [
+      "its own event-derived clock alignment",
+      "its independent sunspot-area record",
+      "no fitted shared shape parameters"
+    ],
+    "shared_parameters": "fitted only on training cycles",
+    "amplitude_mapping": "fitted only on training cycles",
+    "withheld_cycles": [
+      16,
+      20,
+      22
+    ]
+  },
+  "fingerprint": {
+    "recipe": {
+      "mesh": [
+        201,
+        241
+      ],
+      "domain": [
+        0.0,
+        60.0
+      ],
+      "window": [
+        -6.0,
+        11.0
+      ],
+      "folds": [
+        12,
+        13,
+        14,
+        15,
+        17,
+        18,
+        19,
+        21,
+        23
+      ],
+      "withheld": [
+        16,
+        20,
+        22
+      ],
+      "analysis_set": [
+        12,
+        23,
+        30.0
+      ],
+      "gauge": [
+        1.0,
+        1.0,
+        15.0
+      ],
+      "headline_amplitude": "area record"
+    },
+    "digest": "5e55384fbc54"
+  }
+}
